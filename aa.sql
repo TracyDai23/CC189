@@ -42,7 +42,9 @@ print(cnt)
 
 
 
-#3. Book edition, 给定一个list ["PYTHON", "PYTHON 2ND EDITION", 'PY', 'PY 2ND', 'sql','sql 2.0'] 返回所有 开头包含其他书的 book 这个就是["PYTHON 2ND EDITION"]
+#3. Book edition, 给定一个list
+# ["PYTHON", "PYTHON 2ND EDITION", 'PY', 'PY 2ND', 'sql','sql 2.0'] 
+# 返回所有 开头包含其他书的 book 这个就是["PYTHON 2ND EDITION"]
 
 # 
 book_name = ["PYTHON",  "PYTHON 2ND EDITION", "SQL", "SQL Tracie 2", "SQL_2"]
@@ -71,5 +73,7 @@ price_book = []
 for k, v in d.items():
     price_book.append((v,k))
 
-s = sorted(price_book, key = lambda x:(-x[0],x[1])) # when price equals and need to return the lower bookid alphabetically.
+s = sorted(price_book, key = lambda x:(-x[0],x[1])) 
+# when price equals and need to return the lower bookid alphabetically.
+
 print(s[n-1][1])
