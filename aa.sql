@@ -17,7 +17,6 @@ print (round(sumn/cnt,2))
 
 
 
-
 #2. 给定一个Budget INT， 和 price_list 最多可以买几本书
 budget = 30
 
@@ -38,7 +37,6 @@ for i in range(len(price)):
         #print(cnt)  # 这里不能直接return，因为会有corner case price总和低于budget
     
 print(cnt)
-
 
 
 
